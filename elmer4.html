@@ -1,10 +1,4 @@
-<?php
-session_start();
-if (!isset($_SESSION['user_id'])) {
-  header("Location: elmer1.php"); // Redirect to dashboard if logged in
-  exit();
-}
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -319,7 +313,7 @@ container556 {
 <body>
 <div class="topnav" class="header" id="myHeader">
 <header>
-  <a href="elmer2.php"><img align="center" src="Bigb2.png" class="center" width="250" height="80" href="#about"></a>
+  <a href="elmer2.html"><img align="center" src="Bigb2.png" class="center" width="250" height="80" href="#about"></a>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -330,8 +324,8 @@ container556 {
   </button>
   <div class="dropdown-content">
     <!-- Dropdown content here -->
-    <a href="elmer4.php" >Profile</a>
-	<a href="elmer5.php">Settings</a>
+    <a href="elmer4.html" >Profile</a>
+	<a href="elmer5.html">Settings</a>
 	<a id="logout" onclick="logout()">Log Out</a>
   </div>
 </div>
@@ -339,7 +333,7 @@ container556 {
 </div>
   </header>
   <br><br><br><br><br>
-    <?php
+    <?html
     echo '<div class="container556">';
 // Database connection
 $servername = "localhost";
@@ -380,7 +374,7 @@ if (isset($_SESSION['user_id'])) {
     }
 } else {
     echo "Invalid request. Please provide an order ID.";
-    header("Location: elmer1.php");
+    header("Location: elmer1.html");
 }
 
 // Close database connection
@@ -390,19 +384,19 @@ echo '</div>';
 
 <div style="text-align: left; margin-left: 115px;">
 
-<a href="elmer6.php"><button class="button256 button15">About Us</button></a>
-<a href="elmer7.php"><button class="button256 button25">Contact</button></a>
-<a href="elmer8.php"><button class="button256 button35">Help Center</button></a>
-<a href="elmer9.php"><button class="button256 button45">Terms & Condition</button></a>
+<a href="elmer6.html"><button class="button256 button15">About Us</button></a>
+<a href="elmer7.html"><button class="button256 button25">Contact</button></a>
+<a href="elmer8.html"><button class="button256 button35">Help Center</button></a>
+<a href="elmer9.html"><button class="button256 button45">Terms & Condition</button></a>
 
 </div>
 </body>
 <script>
 function logout() {var xhr = new XMLHttpRequest();
-            xhr.open("POST", "http://localhost/data/logout.php", true);
+            xhr.open("POST", "http://localhost/data/logout.html", true);
 
             xhr.onload = function() {  
-				window.location.href = "http://localhost/data/elmer1.php";
+				window.location.href = "http://localhost/data/elmer1.html";
             }; 
 			xhr.send();
 }</script>
