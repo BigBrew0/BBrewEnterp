@@ -1,11 +1,3 @@
-<?php   
-session_start();
-// Check if user is already logged in
-if (!isset($_SESSION['user_id'])) {
-  header("Location: elmer1.php"); // Redirect to dashboard if logged in
-  exit();
-}
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -307,7 +299,7 @@ input[type=submit]:hover {
 <body>
 <div class="topnav" class="header" id="myHeader">
 <header>
-  <a href="elmer2.php"><img align="center" src="Bigb2.png" class="center" width="250" height="80" href="#about"></a>
+  <a href="elmer2.html"><img align="center" src="Bigb2.png" class="center" width="250" height="80" href="#about"></a>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -318,8 +310,8 @@ input[type=submit]:hover {
   </button>
   <div class="dropdown-content">
     <!-- Dropdown content here -->
-    <a href="elmer4.php" >Profile</a>
-	<a href="elmer5.php">Settings</a>
+    <a href="elmer4.html" >Profile</a>
+	<a href="elmer5.html">Settings</a>
 	<a id="logout" onclick="logout()">Log Out</a>
   </div>
 </div>
@@ -341,7 +333,7 @@ input[type=submit]:hover {
 	<span>Product 1 - ₱39.00</span>
     <button class="btn12456"><b>
       <p>DARK&nbsp;CHOCO</p>
-      <p>39.00&nbsp;PHP</p></b>
+      <p>39.00&nbsp;html</p></b>
     </button>
   </div>
   <div onclick="addToCart('WINTERMELON' , 39.00)"  class="img-hover-zoom img-hover-zoom--xyz" class="item" >
@@ -349,7 +341,7 @@ input[type=submit]:hover {
 	<span>Product 2 - ₱39.00</span>
     <button class="btn12456"><b>
       <p>WINTERMELON</p>
-      <p>39.00&nbsp;PHP</p></b>
+      <p>39.00&nbsp;html</p></b>
     </button>
   </div>
   <div onclick="addToCart('OKINAWA', 39.00)" class="img-hover-zoom img-hover-zoom--xyz" class="item" >
@@ -357,7 +349,7 @@ input[type=submit]:hover {
 	<span>Product 3 - ₱39.00</span>
     <button class="btn12456"><b>
       <p>OKINAWA</p>
-      <p>39.00&nbsp;PHP</p></b>
+      <p>39.00&nbsp;html</p></b>
     </button>
   </div>
   <div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('SALTED CARAMEL' ,39.00)">
@@ -365,7 +357,7 @@ input[type=submit]:hover {
 	<span>Product 4 - ₱39.00</span>
     <button class="btn1245633"><b>
       <p>SALTED&nbsp;CARAMEL</p>
-      <p>39.00&nbsp;PHP</p></b>
+      <p>39.00&nbsp;html</p></b>
     </button>
   </div>
 <div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('RED VELVET' ,39.00)">
@@ -373,7 +365,7 @@ input[type=submit]:hover {
 		<span>Product 5 - ₱39.00</span>
 		<button class="btn12456">	<b>	
 		<p>RED&nbsp;VELVET</p>
-		<p>39.00&nbsp;PHP</p></b>
+		<p>39.00&nbsp;html</p></b>
 		</button>
 	</div>
 <div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('TARO' ,39.00)">
@@ -381,7 +373,7 @@ input[type=submit]:hover {
 		<span>Product 6 - ₱39.00</span>
 		<button class="btn12456">	<b>	
 		<p>TARO</p>
-		<p>39.00&nbsp;PHP</p></b>
+		<p>39.00&nbsp;html</p></b>
 		</button>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('DOUBLE DUTCH',39.00)">
@@ -389,7 +381,7 @@ input[type=submit]:hover {
 		<span>Product 7 - ₱39.00</span>
 		<button class="btn1245633"><b>		
 		<p>DOUBLE&nbsp;DUTCH</p>
-		<p>39.00&nbsp;PHP</p></b>
+		<p>39.00&nbsp;html</p></b>
 		</button>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('CHEESECAKE',39.00)">
@@ -397,7 +389,7 @@ input[type=submit]:hover {
 		<span>Product 8 - ₱39.00</span>
 		<button class="btn12456"><b>		
 		<p>CHEESECAKE</p>
-		<p>39.00&nbsp;PHP</p></b>
+		<p>39.00&nbsp;html</p></b>
 		</button>
 	</div>
 
@@ -406,7 +398,7 @@ input[type=submit]:hover {
 		<span>Product 9 - ₱39.00</span>
 		<button class="btn1245633">		<b>
 		<p>COOKIES&nbsp;&&nbsp;CREAM</p>
-		<p>39.00&nbsp;PHP</p></b>
+		<p>39.00&nbsp;html</p></b>
 		</button>
 	</div>
 <div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('MATCHA',39.00)">
@@ -414,7 +406,7 @@ input[type=submit]:hover {
 		<span>Product 10 - ₱39.00</span>
 		<button class="btn12456">	<b>	
 		<p>MATCHA</p>
-		<p>39.00&nbsp;PHP</p></b>
+		<p>39.00&nbsp;html</p></b>
 		</button>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('CHOCOLATE',39.00)">
@@ -422,7 +414,7 @@ input[type=submit]:hover {
 		<span>Product 11 - ₱39.00</span>
 		<button class="btn12456">	<b>	
 		<p>CHOCOLATE</p>
-		<p>39.00&nbsp;PHP</p></b>
+		<p>39.00&nbsp;html</p></b>
 		</button>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('KAPE BRUSKO',39.00)">
@@ -430,7 +422,7 @@ input[type=submit]:hover {
 		<span>Product 12 - ₱39.00</span>
 		<button class="btn12456">	<b>	
 		<p>KAPE&nbsp;BRUSKO</p>
-		<p>39.00&nbsp;PHP</p></b>
+		<p>39.00&nbsp;html</p></b>
 		</button>
 	</div>
 	
@@ -439,7 +431,7 @@ input[type=submit]:hover {
 		<span>Product 13 - ₱39.00</span>
 		<button class="btn12456">	<b>	
 		<p>KAPE&nbsp;MOCA</p>
-		<p>39.00&nbsp;PHP</p></b>
+		<p>39.00&nbsp;html</p></b>
 		</button>
 	</div>
 <div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('KAPE VANILLA',39.00)">
@@ -447,14 +439,14 @@ input[type=submit]:hover {
 		<span>Product 14 - ₱39.00</span>
 		<button class="btn1245633">	<b>	
 		<p>KAPE&nbsp;VANILLA</p>
-		<p>39.00&nbsp;PHP</p></b>
+		<p>39.00&nbsp;html</p></b>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('KAPE MACCHIATO',39.00)">
 		<img src="KAPE MACCHIATO.png" style="width:250px">
 		<span>Product 15 - ₱39.00</span>
 		<button class="btn1245633">	<b>	
 		<p>KAPE&nbsp;MACCHIATO</p>
-		<p>39.00&nbsp;PHP</p></b>
+		<p>39.00&nbsp;html</p></b>
 		</button>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('KAPE CARAMEL', 39.00)">
@@ -462,7 +454,7 @@ input[type=submit]:hover {
 		<span>Product 16 - ₱39.00</span>
 		<button class="btn1245633">	<b>	
 		<p>KAPE&nbsp;CARAMEL</p>
-		<p>39.00 PHP</p></b></b>
+		<p>39.00 html</p></b></b>
 </button>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('KAPE MATCHA',39.00)">
@@ -470,230 +462,230 @@ input[type=submit]:hover {
 		<span>Product 17 - ₱39.00</span>
 		<button class="btn12456">	<b>	
 		<p>KAPE&nbsp;MATCHA</p>
-		<p>39.00&nbsp;PHP</p></b>
+		<p>39.00&nbsp;html</p></b>
 		</button>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('KAPE FUDGE',39.00)">
 		<img src="KAPE FUDGE.png" style="width:250px"><span>Product 18 - ₱39.00</span>
 		<button class="btn12456">	<b>	
 		<p>KAPE&nbsp;FUDGE</p>
-		<p>39.00 PHP</p></b>
+		<p>39.00 html</p></b>
 		</button>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('KIWI',39.00)">
 		<img src="KIWI.png" style="width:250px"><span>Product 19 - ₱39.00</span>
 		<button class="btn12456">	<b>	
 		<p>KIWI</p>
-		<p>39.00&nbsp;PHP</p></b>
+		<p>39.00&nbsp;html</p></b>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('GREEN APPLE',39.00)">
 		<img src="GREEN APPLE.png" style="width:250px"><span>Product 20 - ₱39.00</span>
 		<button class="btn12456"><b>		
 		<p>GREEN&nbsp;APPLE</p>
-		<p>39.00&nbsp;PHP</p></b>
+		<p>39.00&nbsp;html</p></b>
 		</button>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('LEMON',39.00)">
 		<img src="LEMON.png" style="width:250px"><span>Product 21 - ₱39.00</span>
 		<button class="btn12456"><b>		
 		<p>LEMON</p>
-		<p>39.00&nbsp;PHP</p></b>
+		<p>39.00&nbsp;html</p></b>
 		</button>
 	</div>
 		<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('HONEY PEACH',39.00)">
 		<img src="HONEY PEACH.png" style="width:250px"><span>Product 22 - ₱39.00</span>
 		<button class="btn1245633">	<b>	
 		<p>HONEY&nbsp;PEACH</p>
-		<p>39.00&nbsp;PHP</p></b>
+		<p>39.00&nbsp;html</p></b>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('BLUEBERRY',39.00)" >
 		<img src="BLUEBERRY.png" style="width:250px"><span>Product 23 - ₱39.00</span>
 		<button class="btn12456"><b>		
 		<p>BLUEBERRY</p>
-		<p>39.00&nbsp;PHP</p></b>
+		<p>39.00&nbsp;html</p></b>
 		</button>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('MANGO',39.00)">
 		<img src="MANGO.png" style="width:250px"><span>Product 24 - ₱39.00</span>
 		<button class="btn12456"><b>		
 		<p>MANGO</p>
-		<p>39.00&nbsp;PHP</p></b>
+		<p>39.00&nbsp;html</p></b>
 		</button>
 	</div>	
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('LYCHEE',39.00)">
 		<img src="LYCHEE.png" style="width:250px"><span>Product 25 - ₱39.00</span>
 		<button class="btn12456"><b>		
 		<p>LYCHEE</p>
-		<p>39.00&nbsp;PHP</p></b>
+		<p>39.00&nbsp;html</p></b>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('FASHION FRUIT',39.00)">
 		<img src="FASHION FRUIT.png" style="width:250px"><span>Product 26 - ₱39.00</span>
 		<button class="btn12456">	<b>	
 		<p>FASHION&nbsp;FRUIT</p>
-		<p>39.00&nbsp;PHP</p></b>
+		<p>39.00&nbsp;html</p></b>
 		</button>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('WATERMELON',39.00)">
 		<img src="WATERMELON.png" style="width:250px"><span>Product 27 - ₱39.00</span>
 		<button class="btn12456">	<b>	
 		<p>WATERMELON</p>
-		<p>39.00&nbsp;PHP</p></b>
+		<p>39.00&nbsp;html</p></b>
 		</button>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('HOT MOCA',39.00)">
 		<img src="HOT MOCA.png" style="width:250px"><span>Product 28 - ₱39.00</span>
 		<button class="btn12456">	<b>	
 		<p>HOT&nbsp;MOCA</p>
-		<p>39.00 PHP</p></b>
+		<p>39.00 html</p></b>
 		</button>
 	</div>
 		<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('HOT MATCHA',49.00)">
 		<img src="HOT MOCA.png" style="width:250px"><span>Product 29 - ₱49.00</span>
 		<button class="btn1245633">	<b>	
 		<p>HOT&nbsp;MATCHA</p>
-		<p>49.00 PHP</p></b>
+		<p>49.00 html</p></b>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('HOT BRUSKO',49.00)">
 		<img src="HOT MOCA.png" style="width:250px"><span>Product 30 - ₱49.00</span>
 		<button class="btn12456">	<b>	
 		<p>HOT&nbsp;BRUSKO</p>
-		<p>49.00 PHP</p></b>
+		<p>49.00 html</p></b>
 		</button>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('HOT CHOCO',49.00)">
 		<img src="HOT MOCA.png" style="width:250px"><span>Product 3 - ₱49.00</span>
 		<button class="btn12456">	<b>	
 		<p>HOT&nbsp;CHOCO</p>
-		<p>49.00 PHP</p></b>
+		<p>49.00 html</p></b>
 		</button>
 	</div>	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('HOT CARAMEL',49.00)">
 		<img src="HOT MOCA.png" style="width:250px"><span>Product 31 - ₱49.00</span>
 		<button class="btn1245633">	<b>	
 		<p>HOT&nbsp;CARAMEL</p>
-		<p>49.00 PHP</p></b>
+		<p>49.00 html</p></b>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('MILKTEA STRAWBERRY',39.00)">
 		<img src="MILKTEA STRAWBERRY.png" style="width:250px"><span>Product 32 - ₱39.00</span>
 		<button class="btn1245633">		<b>
 		<p>MILKTEA&nbsp;STRAWBERRY</p>
-		<p>39.00 PHP</p></b>
+		<p>39.00 html</p></b>
 		</button>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('MILKTEA CHOCOBERRY',39.00)">
 		<img src="MILKTEA CHOCOBERRY.png" style="width:250px"><span>Product 33 - ₱39.00</span>
 		<button class="btn1245633">		<b>
 		<p>MILKTEA&nbsp;CHOCOBERRY</p>
-		<p>39.00 PHP</p></b>
+		<p>39.00 html</p></b>
 		</button>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('FRUIT TEA STRAWBERRY',39.00)">
 		<img src="FRUIT TEA STRAWBERRY.png" style="width:250px"><span>Product 34 - ₱39.00</span>
 		<button class="btn1245633">		<b>
 		<p>FRUIT&nbsp;TEA&nbsp;STRAWBERRY</p>
-		<p>39.00 PHP</p></b>
+		<p>39.00 html</p></b>
 		</button>
 	</div>	
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('BOSS BREW',90.00)">
 		<img src="BOSS BREW.png" style="width:250px"><span>Product 35 - ₱90.00</span>
 		<button class="btn12456">		<b>
 		<p>BOSS&nbsp;BREW</p>
-		<p>90.00 PHP</p></b>
+		<p>90.00 html</p></b>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('BLANKPINK',90.00)">
 		<img src="BLANKPINK.png" style="width:250px"><span>Product 36 - ₱90.00</span>
 		<button class="btn12456">	<b>	
 		<p>BLANK&nbsp;PINK</p>
-		<p>90.00 PHP</p></b>
+		<p>90.00 html</p></b>
 		</button>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('KARAVAN',95.00)" >
 		<img src="KARAVAN.png" style="width:250px"><span>Product 37 - ₱95.00</span>
 		<button class="btn12456">		<b>
 		<p>KARA&nbsp;-&nbsp;VAN</p>
-		<p>95.00&nbsp;PHP</p></b>
+		<p>95.00&nbsp;html</p></b>
 		</button>
 	</div>
 		<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('KMJS GRANDE',90.00)">
 		<img src="KMJS GRANDE.png" style="width:250px"><span>Product 38 - ₱90.00</span>
 		<button class="btn12456">		<b>
 		<p>KMJS&nbsp;GRANDE</p>
-		<p>90.00 PHP</p></b>
+		<p>90.00 html</p></b>
 		</button>
 	</div>
 		<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('PRAF MOCA',69.00)">
 		<img src="PRAF MOCA.png" style="width:250px"><span>Product 39 - ₱69.00</span>
 		<button class="btn12456">		<b>
 		<p>PRAF&nbsp;MOCA</p>
-		<p>69.00 PHP</p></b>
+		<p>69.00 html</p></b>
 		</button>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('PRAF CARAMEL MACCHIATO',69.00)">
 		<img src="PRAF CARAMEL MACCHIATO.png" style="width:250px"><span>Product 40 - ₱69.00</span>
 		<button class="btn1245644">		<b>
 		<p>PRAF&nbsp;CARAMEL&nbsp;MACCHIATO</p>
-		<p>69.00 PHP</p></b>
+		<p>69.00 html</p></b>
 		</button>
 	</div>	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('PRAF COFFEE JELLY',69.00)">
 		<img src="PRAF COFFEE JELLY.png" style="width:250px"><span>Product 41 - ₱69.00</span>
 		<button class="btn1245633">		<b>
 		<p>PRAF&nbsp;COFFEE&nbsp;JELLY</p>
-		<p>69.00 PHP</p></b>
+		<p>69.00 html</p></b>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('PRAF VANILLA',69.00)">
 		<img src="PRAF VANILLA.png" style="width:250px"><span>Product 42 - ₱69.00</span>
 		<button class="btn12456">		<b>
 		<p>PRAF&nbsp;VANILLA</p>
-		<p>69.00 PHP</p></b>
+		<p>69.00 html</p></b>
 		</button>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('PRAF COOKIES AND CREAM',69.00)">
 		<img src="PRAF COOKIES AND CREAM.png" style="width:250px"><span>Product 43 - ₱69.00</span>
 		<button class="btn1245633">		<b>
 		<p>PRAF&nbsp;COOKIES&nbsp;&&nbsp;CREAM</p>
-		<p>69.00 PHP</p></b>
+		<p>69.00 html</p></b>
 		</button>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('PRAF MATCHA',69.00)">
 		<img src="PRAF MATCHA.png" style="width:250px"><span>Product 44 - ₱69.00</span>
 		<button class="btn12456">		<b>
 		<p>PRAF&nbsp;MATCHA</p>
-		<p>69.00 PHP</p></b>
+		<p>69.00 html</p></b>
 		</button>
 	</div>	
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('PRAF CHOCOLATE',69.00)">
 		<img src="PRAF CHOCOLATE.png" style="width:250px"><span>Product 45 - ₱69.00</span>
 		<button class="btn1245633">		<b>
 		<p>PRAF&nbsp;CHOCOLATE</p>
-		<p>69.00 PHP</p></b>
+		<p>69.00 html</p></b>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="item" onclick="addToCart('PRAF TARO',69.00)">
 		<img src="PRAF TARO.png" style="width:250px"><span>Product 46 - ₱69.00</span>
 		<button class="btn12456">		<b>
 		<p>PRAF&nbsp;TARO</p>
-		<p>69.00 PHP</p></b>
+		<p>69.00 html</p></b>
 		</button>
 	</div>
 	<div class="img-hover-zoom img-hover-zoom--xyz" class="productName" onclick="addToCart('PRAF STRAWBERRY',69.00)">
 		<img src="PRAF STRAWBERRY.png" style="width:250px"><span>Product 47 - ₱69.00</span>
 		<button class="btn1245633">		<b>
 		<p>PRAF&nbsp;STRAWBERRY</p>
-		<p>69.00 PHP</p></b>
+		<p>69.00 html</p></b>
 		</button>
 	</div>
 		<div class="img-hover-zoom img-hover-zoom--xyz" class="productName" onclick="addToCart('PRAF CHEESECAKE' ,69.00)">
 		<img src="PRAF CHEESECAKE.png" style="width:250px"><span>Product 48 - ₱69.00</span>
 		<button class="btn1245633">		<b>
 		<p>PRAF&nbsp;CHEESECAKE</p>
-		<p>69.00 PHP</p> </b>
+		<p>69.00 html</p> </b>
 		</button>
 	</div>
 	</div>
 	
 	<center>
-<a href="elmer6.php"><button class="button256 button15">About Us</button></a>
-<a href="elmer7.php"><button class="button256 button25">Contact</button></a>
-<a href="elmer8.php"><button class="button256 button35">Help Center</button></a>
-<a href="elmer9.php"><button class="button256 button45">Terms & Condition</button></a>
+<a href="elmer6.html"><button class="button256 button15">About Us</button></a>
+<a href="elmer7.html"><button class="button256 button25">Contact</button></a>
+<a href="elmer8.html"><button class="button256 button35">Help Center</button></a>
+<a href="elmer9.html"><button class="button256 button45">Terms & Condition</button></a>
 </center>
 
 <button class="button2567 button15" onclick="toggleDiv()">Check Order</button>
@@ -801,7 +793,7 @@ let cartItems = {};
             var formData = new FormData(document.getElementById("orderform"));
 
             var xhr = new XMLHttpRequest();
-            xhr.open("POST", "http://localhost/data/processorder.php", true);
+            xhr.open("POST", "http://localhost/data/processorder.html", true);
 
             xhr.onload = function() {  
 				processorderitem(xhr.responseText);
@@ -812,19 +804,19 @@ let cartItems = {};
 
 		function processorderitem(order_id) {
 			var xhr = new XMLHttpRequest();
-            xhr.open("POST", "http://localhost/data/processorderitem.php", true);
+            xhr.open("POST", "http://localhost/data/processorderitem.html", true);
 			xhr.setRequestHeader("Content-Type", "application/json");
 
             xhr.onload = function() {  
-				window.location.href = "http://localhost/data/elmer15.php?order_id=" + order_id;
+				window.location.href = "http://localhost/data/elmer15.html?order_id=" + order_id;
             }; 
 			cartItems["orderId"] = order_id;
 			xhr.send(JSON.stringify(cartItems));
 		}  function logout() {var xhr = new XMLHttpRequest();
-            xhr.open("POST", "http://localhost/data/logout.php", true);
+            xhr.open("POST", "http://localhost/data/logout.html", true);
 
             xhr.onload = function() {  
-				window.location.href = "http://localhost/data/elmer1.php";
+				window.location.href = "http://localhost/data/elmer1.html";
             }; 
 			xhr.send();
 }
