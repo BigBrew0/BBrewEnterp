@@ -1,8 +1,8 @@
-<?php   
+<?html   
 session_start();
 // Check if user is already logged in
 if (!isset($_SESSION['user_id'])) {
-  header("Location: elmer1.php"); // Redirect to dashboard if logged in
+  header("Location: elmer1.html"); // Redirect to dashboard if logged in
   exit();
 }
 ?>
@@ -349,7 +349,7 @@ img.avatar {
 <div class="topnav" class="header" id="myHeader">
 <header>
 &nbsp;
-  <a href="elmer2.php"><img align="center" src="Bigb2.png" class="center" width="250" height="80" href="#about"></a>
+  <a href="elmer2.html"><img align="center" src="Bigb2.png" class="center" width="250" height="80" href="#about"></a>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -360,8 +360,8 @@ img.avatar {
   </button>
   <div class="dropdown-content">
     <!-- Dropdown content here -->
-    <a href="elmer4.php" >Profile</a>
-	<a href="elmer5.php">Settings</a>
+    <a href="elmer4.html" >Profile</a>
+	<a href="elmer5.html">Settings</a>
 	<a id="logout" onclick="logout()">Log Out</a>
   </div>
 </div>
@@ -391,8 +391,8 @@ img.avatar {
 <div class="grid-container">
 <center>
 <div class="img-hover-zoom img-hover-zoom--xyz" >
-<form action="elmer3.php" method="post">
-  <a href="elmer3.php">
+<form action="elmer3.html" method="post">
+  <a href="elmer3.html">
   <img src="bigb5.png"  style="width:250px">
   </div>
   </form>
@@ -400,10 +400,10 @@ img.avatar {
 </center>
 </center>
 <center>
-<a href="elmer6.php"><button class="button256 button15">About Us</button></a>
-<a href="elmer7.php"><button class="button256 button25">Contact</button></a>
-<a href="elmer8.php"><button class="button256 button35">Help Center</button></a>
-<a href="elmer9.php"><button class="button256 button45">Terms & Condition</button></a>
+<a href="elmer6.html"><button class="button256 button15">About Us</button></a>
+<a href="elmer7.html"><button class="button256 button25">Contact</button></a>
+<a href="elmer8.html"><button class="button256 button35">Help Center</button></a>
+<a href="elmer9.html"><button class="button256 button45">Terms & Condition</button></a>
 </center>
 <script>
 /* When the user clicks on the button, 
@@ -426,10 +426,10 @@ window.onclick = function(event) {
   }
 }
 function logout() {var xhr = new XMLHttpRequest();
-            xhr.open("POST", "http://localhost/data/logout.php", true);
+            xhr.open("POST", "http://localhost/data/logout.html", true);
 
             xhr.onload = function() {  
-				window.location.href = "http://localhost/data/elmer1.php";
+				window.location.href = "http://localhost/data/elmer1.html";
             }; 
 			xhr.send();
 }
