@@ -390,7 +390,7 @@ img.avatar {
 
 <div id="id01" class="modal">
   
-  <form class="container552" class="modal-content animate"  action="elmer2.html" method="post">
+  <form class="container552" id="loginForm" class="modal-content animate"  method="post">
   <center>
     <div class="imgcontainer">
 	
@@ -405,13 +405,13 @@ img.avatar {
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="password" required>
       <br>
-	  <a href="elmer2.html"><button class="zoom1" class="btn13" type="submit" style="width:auto;" >Login</button></a>
+	  <button type="button" onclick="login()" class="zoom1" class="btn13" type="submit" style="width:auto;" >Login</button>
 	  <br>
 	  </form>
 	  </div>
 </div>
 <div id="id02" class="modal">
-<form class="container552" class="modal-content animate" action="elmer2.html" method="post">
+<form class="container552" id="insertForm" class="modal-content animate" method="post">
   <center>
       <div class="imgcontainer">
 	        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -440,7 +440,7 @@ img.avatar {
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="password" required>
 	<center>
-	<a href="elmer2.html"><button  class="zoom1" class="btn13" style="width:auto;">Sign up</button></a>
+	<button type="button" onclick="insertUser()" class="zoom1" class="btn13" style="width:auto;">Sign up</button>
 		  </form> 
 </center>
 	  </div>
@@ -470,5 +470,40 @@ img.avatar {
 <a href="elmer14.html"><button class="button256 button45">Terms & Condition</button></a>
 </center>
 </body>
+<script>
+function insertUser() {
+            var formData = new FormData(document.getElementById("insertForm"));
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "http://localhost/data/insertuser.php", true);
+
+            xhr.onload = function() {
+                if (xhr.status == 200) {
+                    alert(xhr.responseText);
+                    window.location.reload();
+                }
+            };
+
+            xhr.send(formData);
+        }  
+        function login() {
+            var formData = new FormData(document.getElementById("loginForm"));
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "http://localhost/data/login.php", true);
+
+            xhr.onload = function() {
+              if (xhr.responseText == "error") {
+alert("invalid credentials");
+} else {
+window.location.reload();
+}
+
+            };
+
+            xhr.send(formData);
+        }   
+       
+        </script>
 </html>
 
