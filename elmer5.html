@@ -1,10 +1,4 @@
-<?php
-session_start();
-if (!isset($_SESSION['user_id'])) {
-  header("Location: elmer1.php"); // Redirect to dashboard if logged in
-  exit();
-}
-?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -411,7 +405,7 @@ input[type=text], input[type=password] {
 <br>
 <div class="topnav" class="header" id="myHeader">
 <header>
-  <a href="elmer2.php"><img align="center" src="Bigb2.png" class="center" width="250" height="80" href="#about"></a>
+  <a href="elmer2."><img align="center" src="Bigb2.png" class="center" width="250" height="80" href="#about"></a>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -422,8 +416,8 @@ input[type=text], input[type=password] {
   </button>
   <div class="dropdown-content">
     <!-- Dropdown content here -->
-    <a href="elmer4.php" >Profile</a>
-	<a href="elmer5.php">Settings</a>
+    <a href="elmer4." >Profile</a>
+	<a href="elmer5.">Settings</a>
 	<a id="logout" onclick="logout()">Log Out</a>
   </div>
 </div>
@@ -441,7 +435,7 @@ input[type=text], input[type=password] {
       <img img align="center" src="Bigb2.png" class="center" width="250" height="80" href="#about">
 	   </div>
 
-      <?php
+      <?
 // Database connection
 $servername = "localhost";
 $username = "root";
@@ -487,7 +481,7 @@ echo '<div = "container2">';
     }
 } else {
     echo "Invalid request. Please provide an order ID.";
-    header("Location: elmer1.php");
+    header("Location: elmer1.");
 }
 
 // Close database connection
@@ -498,15 +492,15 @@ $conn->close();
 </div>
 <br>
 <hr>
-<a href="elmer6.php"><button class="button256 button15">About Us</button></a>
+<a href="elmer6."><button class="button256 button15">About Us</button></a>
 <br>
-<a href="elmer7.php"><button class="button256 button15">Contact</button></a>
+<a href="elmer7."><button class="button256 button15">Contact</button></a>
 <br>
-<a href="elmer8.php"><button class="button256 button15">Help Center</button></a>
+<a href="elmer8."><button class="button256 button15">Help Center</button></a>
 <br>
-<a href="elmer9.php"><button class="button256 button15">Terms & Condition</button></a>
+<a href="elmer9."><button class="button256 button15">Terms & Condition</button></a>
 <br>
-<a href="elmer10.php"><button class="button256 button15">Privacy</button></a>
+<a href="elmer10."><button class="button256 button15">Privacy</button></a>
 <script>
 function myFunction() {
    var element = document.body;
@@ -516,7 +510,7 @@ function updateUser() {
             var formData = new FormData(document.getElementById("updateform"));
 
             var xhr = new XMLHttpRequest();
-            xhr.open("POST", "http://localhost/data/updateuser.php", true);
+            xhr.open("POST", "http://localhost/data/updateuser.", true);
 
             xhr.onload = function() {
                 if (xhr.status == 200) {
@@ -527,10 +521,10 @@ function updateUser() {
 
             xhr.send(formData);
         }function logout() {var xhr = new XMLHttpRequest();
-          xhr.open("POST", "http://localhost/data/logout.php", true);
+          xhr.open("POST", "http://localhost/data/logout.", true);
 
           xhr.onload = function() {  
-      window.location.href = "http://localhost/data/elmer1.php";
+      window.location.href = "http://localhost/data/elmer1.";
           }; 
     xhr.send();
 }
